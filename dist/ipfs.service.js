@@ -21,6 +21,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.IpfsService = void 0;
 const common_1 = require("@nestjs/common");
 const IPFS = require("ipfs");
 const ipfs_constants_1 = require("./ipfs.constants");
@@ -42,8 +43,8 @@ let IpfsService = class IpfsService {
     }
 };
 IpfsService = __decorate([
-    common_1.Injectable(),
-    __param(0, common_1.Inject(ipfs_constants_1.IPFS_MODULE_OPTIONS)),
+    (0, common_1.Injectable)(),
+    __param(0, (0, common_1.Inject)(ipfs_constants_1.IPFS_MODULE_OPTIONS)),
     __metadata("design:paramtypes", [Object])
 ], IpfsService);
 exports.IpfsService = IpfsService;

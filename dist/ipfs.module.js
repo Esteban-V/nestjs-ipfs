@@ -16,6 +16,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 var IpfsModule_1;
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.IpfsModule = void 0;
 const common_1 = require("@nestjs/common");
 const ipfs_constants_1 = require("./ipfs.constants");
 const ipfs_service_1 = require("./ipfs.service");
@@ -87,7 +88,7 @@ let IpfsModule = IpfsModule_1 = class IpfsModule {
     }
 };
 IpfsModule = IpfsModule_1 = __decorate([
-    common_1.Global(),
-    common_1.Module({})
+    (0, common_1.Global)(),
+    (0, common_1.Module)({})
 ], IpfsModule);
 exports.IpfsModule = IpfsModule;
